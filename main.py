@@ -31,8 +31,10 @@ def create_pixel_art(image_path: str, output_image_path: str,
 if __name__ == "__main__":
     # Check if the correct number of arguments are provided
     if len(sys.argv) != 4 and len(sys.argv) != 5:
-        print("Usage: python pixel_art_generator.py <input_image_path> <output_image_path> <pixel_size> [optional:<filter_type>]")
-        print("Example: python pixel_art_generator.py input.jpg output.png 16 BLUR")
+        print("Usage: python pixel_art_generator.py <input_image_path> "
+        "<output_image_path> <pixel_size> [optional:<filter_type>]")
+
+        print("Example: python pixel_art_generator.py input.jpg output.png 16 TRANSPARENT")
         print("Example: python pixel_art_generator.py input.jpg output.png 16")
         sys.exit(1)
 

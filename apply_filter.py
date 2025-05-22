@@ -39,12 +39,12 @@ def filter(image: Image.Image, filter_type: str) -> Image.Image:
     Apply a filter to the image based on the filter type.
 
     """
-    filters = {
+    FILTER_FUNCTIONS = {
         'PURPLE_TINT': purple_tint,
         'TRANSPARENT': transparency_filter
     }
     
-    if filter_type in filters:
-        return filters[filter_type](image)
+    if filter_type in FILTER_FUNCTIONS:
+        return FILTER_FUNCTIONS[filter_type](image)
     else:
         raise ValueError(f"Unknown filter type: {filter_type}")

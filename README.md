@@ -12,7 +12,14 @@ To ensure the program runs correct, please use the following commands:
     python -m pip install --upgrade Pillow
 ```
 
-To run the code, use the following format:
+Use the following format to run the code:
+``` 
+    python pixel_art_generator.py <input_image_path> <output_image_path> <pixel_size> <filter_type>
 ```
-    python pixel_art_generator.py <input_image_path> <output_image_path> <pixel_size>
-```
+
+
+The different type of filters currently in the program are:
+1) TRANSPARENT
+2) PURPLE_TINT
+
+For making sprites in games, use TRANSPARENT as the filter 

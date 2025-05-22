@@ -17,6 +17,7 @@ Use the following format to run the code:
     python pixel_art_generator.py <input_image_path> <output_image_path> <pixel_size> <filter_type>
 ```
 
+### Filters
 
 The different type of filters currently in the program are:
 1) TRANSPARENT
